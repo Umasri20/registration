@@ -1,229 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Floral Theme Website</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background-color: #fff0f5;
-      color: #333;
-    }
-
-    
-    nav {
-      background-color: #ff69b4;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav h1 {
-      color: white;
-      font-size: 24px;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    
-    .hero {
-  background: url('https://i.pinimg.com/736x/0c/8f/2c/0c8f2c1bfaa3523fafa78d65ee5eef82.jpg') no-repeat center center/cover;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  transition: filter 0.3s ease;
-}
-
-.hero {
-      background: url('https://i.pinimg.com/736x/0c/8f/2c/0c8f2c1bfaa3523fafa78d65ee5eef82.jpg')no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      background: rgb(255, 105, 185);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-.about {
-  padding: 40px;
-  background-color: #fff0f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  gap: 40px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.text {
-  flex: 1;
-  min-width: 280px;
-  text-align: left;
-}
-
-.text h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.image {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  justify-content: center;
-}
-
-.image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-}
-.cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 50px 30px;
-    }
-
-    .card {
-      background: white;
-      width: 280px;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .card h4 {
-      margin: 15px 0 10px;
-      color: #ff1493;
-    }
-
-    .card p {
-      font-size: 15px;
-    }
-
-    
-    footer {
-      background-color: #ff69b4;
-      color: white;
-      padding: 20px 30px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Login Form</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #031321;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px #00f7ff;
+            width: 600px;
+            max-width: 90%;
+        }
+        .login-form{
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            flex: 1;
+            color: #fff;
+        }
+        .login-form h2{
+            margin-bottom: 20px;
+        }
+        .login-form input{
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #0a1e2e;
+            border: 1px solid #00f7ff;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .login-form button{
+            width: 110%;
+            padding: 12px;
+            background: #00f7ff;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login-form button:hover{
+            background: #00d3e0;
+        }
+        .login-form p{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-form a{
+            color:#00f7ff;
+            text-decoration: none;
+        }
+        .welcome-section{
+            background: linear-gradient(to right,#00f7ff,#007bff);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .welcome-section h1{
+            font-size: 24px ;
+        }
+        .welcome-section p{
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-<nav>
-  <h1>Flower World</h1>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#shop">Shop</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-  <section class="hero">
-    <h2>Welcome to the World of Flowers</h2>
-  </section>
-
- <section class="about">
-  <div class="about-content">
-    <div class="text">
-      <h3>About Us</h3>
-      <p>We bring joy with beautiful, fresh flowers for every occasion. Our florists hand-pick blossoms with love and care to brighten your day.</p>
-      
-      <p>With years of experience in floral design, we take pride in crafting arrangements that speak from the heart. Whether it’s a birthday, wedding, or just a thoughtful gesture, our flowers deliver emotion with every petal.</p>
-      
-      <p>We source our blooms from trusted local growers to ensure quality and freshness. Each bouquet is thoughtfully arranged to match your style and sentiment, making every delivery special.</p>
-      
-      <p>Our mission is to spread happiness through the timeless beauty of flowers. We believe in the power of nature to heal, uplift, and connect people — one bloom at a time.</p>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="#">
+                <input type="text" placeholder="Username"required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="welcome-section">
+            <h1>WELCOME BACK!</h1>
+            <P>Login to access all smart experiences and services.</P>
+        </div>
     </div>
-    
-    <div class="image">
-      <img src="https://i.pinimg.com/736x/d6/7a/8c/d67a8c52eee6bc07b9b3781312d549ae.jpg" alt="Fresh Flowers">
-    </div>
-  </div>
-</section>
-
-
-
-  
-  <section class="cards">
-    <div class="card">
-        <img src="https://i.pinimg.com/736x/14/a2/3f/14a23f0320288ddb2c0b65b1f588a769.jpg">
-      <h4>Rose Collection</h4>
-      <p>Elegant roses in all colors to express your love and care.</p>
-    </div>
-    <div class="card">
-      <img src="https://i.pinimg.com/736x/f6/85/61/f685611466a20198cc4607afc84cb43a.jpg"alt="Bouquet">
-      <h4>Custom Bouquets</h4>
-      <p>Create your own bouquet with seasonal flowers.</p>
-    </div>
-    <div class="card">
-      <img src="https://i.pinimg.com/736x/72/ab/bf/72abbf5303af9e395a655b4d5b8dce75.jpg" alt="Decorations">
-      <h4>Event Decorations</h4>
-      <p>Floral arrangements for weddings, birthdays, and events.</p>
-    </div>
-  </section>
-
-  <footer>
-  <p>&copy; 2025 Flower World. All rights reserved.</p>
-  <address>
-    📍 123 Bloom Street, Roseville, CA 95661, USA<br>
-    📞 <a href="tel:+11234567890">+1 (123) 456-7890</a><br>
-    📧 <a href="mailto:info@flowerworld.com">info@flowerworld.com</a>
-  </address>
-</footer>
-
-
 </body>
 </html>
-
